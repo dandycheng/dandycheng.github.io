@@ -84,12 +84,18 @@ main {
     right: 1000%;
 }
 
+#repo-list, #search-result, #search-wrap {
+    width: 90%;
+}
+
 .link:hover {
     background-color: #868686;
 }
-.topic{
+
+.topic {
     font-size: .8rem !important;
 }
+
 .repo-desc {
     font-size: 1.2rem;
 }
@@ -225,9 +231,6 @@ main {
     }
     #hide {
         display: none;
-    }
-    #repo-list {
-        width: 85% !important;
     }
     #actions>div a, #actions>div button {
         width: auto;
