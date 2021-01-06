@@ -2,7 +2,7 @@ const COMPONENTS = {
     repoItem: async function (data, color) {
         let topics = ''
         if (data.topics.length > 0) {
-            topics += data.topics.map(x => `<span class="topic badge badge-secondary m-1 px-2 uk-text-bold">#${ x }</span>`)
+            topics += data.topics.map(x => `<span class="topic badge badge-secondary mr-1 mt-1 px-2 uk-text-bold">#${ x }</span>`)
         }
         let html = $(`
             <div>
@@ -12,7 +12,7 @@ const COMPONENTS = {
                         <i class="link ml-2 rounded rounded-circle" uk-tooltip="Copy repository URL"></i>
                     </div>
                     ${ data.description === null ? 'No description' : `<p class="uk-text-truncate">${ data.description }</p>` }
-                    ${ data.topics.length > 0 ? `<div>${ topics.replace(/,/g, '') }</div>` : '' }
+                    ${ data.topics.length > 0 ? `<div class="mt-2 p-0">${ topics.replace(/,/g, '') }</div>` : '' }
                 </div>
             </div>
         `)

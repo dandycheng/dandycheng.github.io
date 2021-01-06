@@ -49,6 +49,10 @@ label {
     background-image: url(assets/svg/new-tab.svg);
     background-size: cover;
 }
+.badge{
+    word-wrap: break-word;
+    overflow: hidden;
+}
 
 button {
     font-weight: 400 !important;
