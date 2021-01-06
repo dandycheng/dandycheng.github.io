@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Impossible Tic-Tac-Toe</title>
+        <link href="https://fonts.googleapis.com/css?family=Nunito|Rubik:500" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+<body>
+    <img src="assets/circle-blk.svg" rel="preload">
+    <p id="credit">Made by <a href="https://github.com/dandycheng" class="emphasize">Dandy Cheng</a></p>
+    <noscript>Please turn <em>JavaScript </em>in <span class="alert">settings</span> the play this game</noscript>
+    <main>
+        <h2>Impossible Tic-Tac-Toe</h2>
+        <button id="play-btn"></button>
+        <div id="game-wrap">
+            <p class="winner-indicator"></p>
+            <h3 id="gamemode"></h3>
+            <div id="box-wrap">
+                <div class="row">
+                    <div class="box top left"></div>
+                    <div class="box top"></div>
+                    <div class="box top right"></div>
+                </div>
+                <div class="row">
+                    <div class="box left"></div>
+                    <div class="box"></div>
+                    <div class="box right"></div>
+                </div>
+                <div class="row">
+                    <div class="box bottom left"></div>
+                    <div class="box bottom"></div>
+                    <div class="box bottom right"></div>
+                </div>
+            </div>
+            <div id="toggle-wrap">
+                <div id="toggle"></div>
+            </div>
+            <button id="reset">Reset</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+    </body>
+</html>

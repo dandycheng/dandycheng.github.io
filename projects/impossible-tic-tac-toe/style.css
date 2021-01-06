@@ -1,0 +1,239 @@
+
+
+/***************
+    CONTENT
+***************/
+
+/*
+*   Content BEFORE choose clicking play btn
+*
+*/
+[rel="preload"]{
+    display: none;
+}
+main{
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main > h2{
+    position: absolute;
+    top:30%;
+    transform: translateY(0);
+    transition:all .3s ease;
+    z-index:99;
+}
+#game-selection{
+    position: absolute;
+    width:250px;
+    height:50px;
+    background-color:rgb(43, 255, 0);
+    border:2px solid rgb(78, 78, 78);
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    z-index:2;
+    transition:all .2s ease;
+}
+#game-selection li{
+    width:100%;
+    height:50px;
+    line-height: 50px;
+    text-align: center;
+}
+#game-selection li~li:hover{
+    background-color:rgb(37, 192, 2);
+}
+
+
+/*
+*   Content AFTER choose clicking play btn
+*
+*/
+
+#game-wrap{
+    background-color:#fff;
+    z-index:4;
+    width:100%;
+    height:100%;
+    position: absolute;
+    transform:translateX(-150vw);
+    transition:all .3s ease;
+}
+#gamemode{
+    padding:5vh;
+}
+#box-wrap{
+    margin:0 auto;
+    width:400px;
+    height:400px;
+    max-height:450px;
+    max-width:450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.winner-indicator{
+    position: absolute;
+    left:calc(50% - 50px);
+    top:40%;
+    padding:10px 20px;
+    border-radius:50px;
+    background-color:rgb(56, 252, 235);
+    z-index:10;
+    display: none;
+}
+*{
+    color:#000;
+    list-style-type: none;
+    text-decoration: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    position: relative;
+    font-family: 'Nunito','Rubik',sans-serif;
+    font-weight: 500;
+}
+html,body{
+    width:100%;
+    height:100%;
+    text-align: center;
+    overflow: hidden;
+    transition:opacity .1s linear;
+}
+h1,h2,h3,h4,h5,h6{
+    cursor: default;
+}
+noscript{
+    width:100%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space:pre-wrap;
+    cursor: default;
+}
+
+
+/*******************
+        MISC
+*******************/
+
+.emphasize{
+    color:rgb(0, 132, 255);
+}
+#gamemode{
+    font-weight:300;
+}
+button{
+    border:none;
+    border-radius: 3px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+#play-btn{
+    background-image:url(assets/play-btn.svg);
+    background-size:70% auto;
+    background-position: 48% center;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+}
+.turn{
+    width:100%;
+    height:1px;
+    top:5px;
+    background-color:#0f0;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    height:33.3%;
+}
+.box{
+    width:33.3%;
+    height:100%;
+    border:1px solid rgb(1, 52, 117);
+    box-sizing: border-box;
+    background-size:90% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    transition:all .3s linear;
+}
+.box:hover{
+    background-color: rgb(245, 245, 245);
+}
+#toggle-wrap{
+    position: absolute;
+    width:80px;
+    height:42px;
+    left:10px;
+    bottom:15%;
+    border:2px solid #000;
+    border-radius: 30px;
+    background-image: url(assets/toggle.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:120% auto;
+    transition:opacity .3s linear;
+    cursor: pointer;
+}
+#toggle{
+    position: absolute;
+    width:35px;
+    height:35px;
+    top:3.6px;
+    left:5px;
+    border-radius: 50%;
+    background-color:rgb(206, 206, 206);
+    transition:all .2s ease;
+}
+#reset{
+    width:80px;
+    height:30px;
+    position: absolute;
+    bottom:5%;
+    left:12px;
+    background-color:#f00;
+    color:#fff;
+}
+/*
+*   INDIVIDUAL BOX BORDERS
+*
+*/
+
+.top{
+    border-top:none;
+}
+.bottom{
+    border-bottom: none;
+}
+.left{
+    border-left:none;
+}
+.right{
+    border-right: none;
+}
+
+@keyframes animate_mark{
+    0%{
+        background-size:70% auto;
+    }
+    50%{
+        background-size:100% auto;
+    }
+    75%{
+        background-size:80% auto
+    }
+    100%{
+        background-size:90% auto;
+    }
+}
