@@ -25,6 +25,7 @@ const COMPONENTS = {
             copy[0].select()
             copy[0].setSelectionRange(0, 99999)
             document.execCommand('copy')
+            copy[0].blur()
             UIkit.notification("<p class='uk-text-normal uk-text-small uk-text-center p-2 m-0'>Link copied</p>", { pos: 'bottom-center', timeout: 1000, status: 'success' })
         })
 
