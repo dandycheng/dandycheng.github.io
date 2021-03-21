@@ -49,7 +49,7 @@ The error for layer $$l$$ is calculated as:
 [/math]
 
 
-#### Without going too much into detail, the formula for the error in layer $l$ is:
+#### Without going too much into detail, the formula for the error in layer $$l$$ is:
 
 [math]
     \text{for }0...L:\newline
