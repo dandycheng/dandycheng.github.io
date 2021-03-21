@@ -1,4 +1,6 @@
-### This is a PyTorch implementation of [this](https://github.com/dandycheng/ml-neural-network-mnist-ocr) MNIST OCR project.
+### This is a PyTorch implementation of MNIST OCR project:
+[Open in GitHub](https://github.com/dandycheng/ml-neural-network-mnist-ocr)
+
 
 The following shows the configuration of the model:
 
