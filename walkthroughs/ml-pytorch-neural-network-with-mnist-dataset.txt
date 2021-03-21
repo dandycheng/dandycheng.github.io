@@ -17,7 +17,7 @@ With the configurations aforementioned, we make a prediction of the following sa
 ![Sample](https://raw.githubusercontent.com/dandycheng/ml-pytorch-neural-network-with-mnist-dataset/master/img/sample_data.png)
 
 
-We can obtain the output ($$\hat{y}$$) as such:
+We can obtain the output $$\hat{y}$$ as such:
 ```python
 yhat = model(x)
 
