@@ -1,0 +1,27 @@
+### This is a PyTorch implementation of [this](https://github.com/dandycheng/ml-neural-network-mnist-ocr) MNIST OCR project.
+
+The following shows the configuration of the model:
+
+- Layers (784,70,10)
+- Criterion - Cross entropy loss (`nn.CrossEntropyLoss()`)
+- Activation function - Tanh
+
+After training the model, we get the following loss:
+
+![Model loss](https://raw.githubusercontent.com/dandycheng/ml-pytorch-neural-network-with-mnist-dataset/master/img/loss.png)
+
+With the configurations aforementioned, we make a prediction of the following sample:
+
+![Sample](https://raw.githubusercontent.com/dandycheng/ml-pytorch-neural-network-with-mnist-dataset/master/img/sample_data.png)
+
+
+We can obtain the output ($$\hat{y}$$) as such:
+```python
+yhat = model(x)
+
+# We get the following for yhat
+tensor([-3.9055, -3.2242,  0.3463, -0.3592,  5.6170, -4.5889, -3.4622,  1.8997,
+        -2.8147,  0.2263], grad_fn=<AddBackward0>)
+
+print(f"Yhat: {torch.argmax(yhat)}")  # tensor(4)
+```
